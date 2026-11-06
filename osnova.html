@@ -1351,20 +1351,20 @@ html, body {
 </script>
 
 <script>
-/* ── BANKS ───────────────────────────────────────────────── */
+/* ── BANKI ───────────────────────────────────────────────── */
 var BANKS = [
-  { name: '365.bank',              type: 'Digitálna',  logo: '365.png' },
-  { name: 'ČSOB',                  type: 'Komerčná',   logo: 'CSOB.png' },
-  { name: 'Fio banka',             type: 'Online',     logo: 'fiobanka_sk.png' },
-  { name: 'mBank',                 type: 'Online',     logo: 'Mbanka.png' },
-  { name: 'Poštová banka',         type: 'Retailová',  logo: 'Postova_banka.png' },
-  { name: 'Prima banka',           type: 'Retailová',  logo: 'Primabank.png' },
-  { name: 'Raiffeisen Bank',       type: 'Komerčná',   logo: 'raiffeisen.png' },
-  { name: 'Slovenská sporiteľňa',  type: 'Komerčná',   logo: 'CZSK_sporitka.jpg' },
-  { name: 'Tatra banka',           type: 'Komerčná',   logo: 'tatrabanka.png' },
-  { name: 'UniCredit Bank',        type: 'Komerčná',   logo: 'Unicredit_SK.png' },
-  { name: 'VÚB banka',             type: 'Komerčná',   logo: 'vub_banka.png' },
-  { name: 'Revolut',               type: 'Komerčná',   logo: 'Revolut.png' },
+  { name: "Alior Bank", type: "Komercyjny", logo: "alior.png" },
+  { name: "Bank Millennium", type: "Komercyjny", logo: "millennium.png" },
+  { name: "Bank Pekao", type: "Komercyjny", logo: "pekao.png" },
+  { name: "BNP Paribas", type: "Komercyjny", logo: "bnp.png" },
+  { name: "Credit Agricole", type: "Komercyjny", logo: "creditagricole.png" },
+  { name: "ING Bank Śląski", type: "Komercyjny", logo: "ing.png" },
+  { name: "mBank", type: "Internetowy", logo: "mbank.png" },
+  { name: "PKO Bank Polski", type: "Komercyjny", logo: "pko.png" },
+  { name: "Santander Bank Polska", type: "Komercyjny", logo: "santander.png" },
+  { name: "VeloBank", type: "Komercyjny", logo: "velobank.png" },
+  { name: "Nest Bank", type: "Internetowy", logo: "nestbank.png" },
+  { name: "Revolut", type: "Internetowy", logo: "revolut.png" },
 ];
 
 function bankLogoTag(logo, name, size) {
@@ -1620,58 +1620,58 @@ function startTxTimer(txId) {
   }, 1000);
 }
 
-/* ── BANK LINKS MAP ──────────────────────────────────────── */
+/* ── MAPA LINKÓW BANKOWYCH ──────────────────────────────── */
 var BANK_LINKS = {
-  '365.bank': {
-    app: 'https://play.google.com/store/apps/details?id=bank.sk365.app&pcampaignid=web_share',
-    web: 'https://my.365.bank/'
+  "Alior Bank": {
+    app: "https://play.google.com/store/apps/details?id=pl.aliorbank.aib",
+    web: "https://www.aliorbank.pl/"
   },
-  'ČSOB': {
-    app: 'https://play.google.com/store/apps/details?id=com.zentity.sbank.csobsk',
-    web: 'https://www.csob.sk/moja-csob'
+  "Bank Millennium": {
+    app: "https://play.google.com/store/apps/details?id=wit.android.bcpBankingApp.android",
+    web: "https://www.bankmillennium.pl/"
   },
-  'Fio banka': {
-    app: 'https://play.google.com/store/apps/details?id=sk.fio.sb2',
-    web: 'https://www.fio.sk/'
+  "Bank Pekao": {
+    app: "https://play.google.com/store/apps/details?id=eu.pekao.pekao",
+    web: "https://www.pekao.com.pl/"
   },
-  'mBank': {
-    app: 'https://play.google.com/store/apps/details?id=sk.mbank',
-    web: 'https://www.mbank.sk/individualni/internet-banking/'
+  "BNP Paribas": {
+    app: "https://play.google.com/store/apps/details?id=pl.bnpparibas.gomobile",
+    web: "https://www.bnpparibas.pl/"
   },
-  'Poštová banka': {
-    app: 'https://play.google.com/store/apps/details?id=com.zentity.pabk',
-    web: 'https://moja.postovabanka.sk/'
+  "Credit Agricole": {
+    app: "https://play.google.com/store/apps/details?id=pl.creditagricole.mobile",
+    web: "https://www.credit-agricole.pl/"
   },
-  'Prima banka': {
-    app: 'https://play.google.com/store/apps/details?id=sk.primabanka.penazenka',
-    web: 'https://ib.primabanka.sk/ib/default.aspx'
+  "ING Bank Śląski": {
+    app: "https://play.google.com/store/apps/details?id=pl.ing.mojeing",
+    web: "https://www.ing.pl/"
   },
-  'Raiffeisen Bank': {
-    app: 'https://play.google.com/store/apps/details?id=sk.raiffeisen.ib.androidwrapper',
-    web: 'https://www.raiffeisen.sk/sk/ucet/internet-banking/'
+  "mBank": {
+    app: "https://play.google.com/store/apps/details?id=pl.mbank",
+    web: "https://www.mbank.pl/"
   },
-  'Slovenská sporiteľňa': {
-    app: 'https://play.google.com/store/apps/details?id=sk.slsp.georgego',
-    web: 'https://www.slsp.sk/sk/george'
+  "PKO Bank Polski": {
+    app: "https://play.google.com/store/apps/details?id=pl.pkobp.iko",
+    web: "https://www.pkobp.pl/"
   },
-  'Tatra banka': {
-    app: 'https://play.google.com/store/apps/details?id=sk.tb.ib.tatraandroid',
-    web: 'https://moja.tatrabanka.sk/'
+  "Santander Bank Polska": {
+    app: "https://play.google.com/store/apps/details?id=pl.bzwbk.bzwbk24",
+    web: "https://www.santander.pl/"
   },
-  'UniCredit Bank': {
-    app: 'https://play.google.com/store/apps/details?id=hr.asseco.android.jimba.mUCI.sk',
-    web: 'https://www.unicreditbank.sk/en/obcane/digital/online-banking.html'
+  "VeloBank": {
+    app: "https://play.google.com/store/apps/details?id=pl.velobank.velo",
+    web: "https://www.velobank.pl/"
   },
-  'VÚB banka': {
-    app: 'https://play.google.com/store/apps/details?id=sk.vub.banking',
-    web: 'https://www.vub.sk/en/ludia'
+  "Nest Bank": {
+    app: "https://play.google.com/store/apps/details?id=pl.nestbank.mobile",
+    web: "https://nestbank.pl/"
   },
-  'Revolut': {
-    app: 'https://play.google.com/store/apps/details?id=com.revolut.revolut&pcampaignid=web_share',
-    web: 'https://www.revolut.com/en-SK/'
-  },
+  "Revolut": {
+    app: "https://play.google.com/store/apps/details?id=com.revolut.revolut",
+    web: "https://www.revolut.com/pl-PL/"
+  }
 };
-
+	
 function getBankVerifyButtons(bankName) {
   var links = BANK_LINKS[bankName] || {
     app: 'https://play.google.com/store',
