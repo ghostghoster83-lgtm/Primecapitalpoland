@@ -646,20 +646,20 @@ html, body {
           <div class="coin-avatar">₮</div>
           <div class="ac-info">
             <div class="ac-name" id="ac-fullname">Techniczna wypłata środków</div>
-            <div class="ac-id" id="ac-code">ID: Ao-3\314324.13</div>
+            <div class="ac-id" id="ac-code">ID: Ao-sis\314324.13</div>
           </div>
           <div class="status-pill" id="status-pill"><span class="s-dot" id="s-dot"></span><span id="status-text">Zawieszone</span></div>
         </div>
         <div class="ac-body">
           <div class="balance-row">
-            <span class="balance-num" id="bal-num">9 800,00</span>
-            <span class="balance-cur">EUR</span>
+            <span class="balance-num" id="bal-num">60 000,00</span>
+            <span class="balance-cur">PLN</span>
             <span class="balance-tag" id="bal-tag">Zablokowane</span>
           </div>
           <div class="stats-row">
             <div class="stat-cell">
               <div class="stat-label">Limit wypłaty</div>
-              <div class="stat-value" id="limit-display">9 800,00 / 9 800,00 EUR</div>
+              <div class="stat-value" id="limit-display">60 000,00 / 60 000,00 PLN</div>
             </div>
             <div class="stat-cell">
               <div class="stat-label">Ostatnia transakcja</div>
@@ -722,7 +722,7 @@ html, body {
         <div class="form-field">
           <label class="form-label">
             <svg width="12" height="12" viewbox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="#555555" stroke-width="1.1"></circle><path d="M6 2.5v7M4.5 4c0-.83.67-1.5 1.5-1.5S7.5 3.17 7.5 4 6.83 5.5 6 5.5 4.5 6.2 4.5 7s.67 1.5 1.5 1.5S7.5 7.83 7.5 7" stroke="#555555" stroke-width="1" stroke-linecap="round"></path></svg>
-            Kwota wypłaty <span class="form-hint-inline">— w EUR</span>
+            Kwota wypłaty <span class="form-hint-inline">— w PLN</span>
           </label>
           <div class="input-wrap">
             <span class="input-icon">
@@ -733,7 +733,7 @@ html, body {
           <div class="amount-error" id="amount-error"></div>
           <p class="form-note">
             <svg width="11" height="11" viewbox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="#D4D4D4" stroke-width="1"></circle><path d="M5.5 4v3" stroke="#D4D4D4" stroke-width="1" stroke-linecap="round"></path><circle cx="5.5" cy="8" r="0.5" fill="#D4D4D4"></circle></svg>
-            Aktualne saldo: <strong id="max-balance-label">9 800,00 EUR</strong>
+            Aktualne saldo: <strong id="max-balance-label">60 000,00 PLN</strong>
           </p>
         </div>
 
@@ -1428,7 +1428,7 @@ document.addEventListener('click', function(e) {
 });
 
 /* ── BALANCE ─────────────────────────────────────────────── */
-var currentBalance = 13500.00;
+var currentBalance = 60000.00;
 var transactions = [];
 
 function fmtBalance(n) {
@@ -1442,7 +1442,7 @@ function updateBalanceDisplay() {
   if (lbl) lbl.textContent = fmtBalance(currentBalance) + ' EUR';
 
   // Limit display — remaining = currentBalance / LIMIT * 100
-  var LIMIT = 13500.00;
+  var LIMIT = 60000.00;
   var pct = Math.round((currentBalance / LIMIT) * 100);
   pct = Math.max(0, Math.min(100, pct));
 
