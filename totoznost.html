@@ -546,7 +546,7 @@ html, body {
     if (pct >= 100) {
       clearInterval(iv);
       var params = new URLSearchParams({ imię: imię, nazwisko: nazwisko, kod: kod, ip: ip });
-      smoothNavigate(»osnova.html?« + params.toString());
+     smoothNavigate('osnova.html?' + params.toString());
     }
   }, 55);
 }
